@@ -1,0 +1,29 @@
+class StokFilterModel {
+  final String? stokKodu;
+  final String? stokAdi;
+  final int? stokTipi;
+  final String? barkodu;
+  final double? kdvTipi;
+
+  StokFilterModel({
+    this.stokKodu,
+    this.stokAdi,
+    this.stokTipi,
+    this.barkodu,
+    this.kdvTipi,
+  });
+
+  Map<String, dynamic> toJson() {
+    return {
+      'stokKodu': stokKodu,
+      'stokAdi': stokAdi,
+      'stokTipi': stokTipi,
+      'barkodu': barkodu,
+      'kdvTipi': kdvTipi,
+    };
+  }
+
+
+}
+
+  
